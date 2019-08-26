@@ -36,7 +36,7 @@ aprenda conosco e se mantenha atualizado!
         <p>Texto <ins>inserido</ins> e <del>excluido</del>.</p>
         <p>Texto <small>pequeno</small> e <mark>destacado</mark>.</p>
         <hr/><!-- separador-->
-       <!--tag de citação-->
+       <!--tag de citaç-ão-->
         <p>Kleyson Gomes CEO da Desbravalink fala: 
             <q>O futuro depende de você</q>.</p>
         <!--tag de abreviação - com o mouse em cima mostra um texto-->
@@ -53,13 +53,129 @@ aprenda conosco e se mantenha atualizado!
         <hr/><!-- separador--> 
         <table>
             <tr>    
-                <th>{linha 1, coluna 1}</th>
-                <th>{linha 1, coluna 2}</th>
+                <!--th dá um destaque de titulo na linha em questão-->
+                <th>linha 1, coluna 1 |</th> 
+                <th>linha 1, coluna 2</th>
             </tr>
             <tr>    
-                <td>(pão)</td>
-                <td>(queijo)</td>
+                <td>pão</td>
+                <td>queijo</td>
             </tr>
         </table>
+        <hr/><!-- separador--> 
+        <h3>TABELA COMPLEXA</h3>
+        <table border="1"> 
+            <thead>
+                <tr>
+                    <th>PRODUTO</th>
+                    <th>VALOR</th>
+                    <th>QUANTIDADE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Feijão</td>
+                    <td>R$ 8,75</td>
+                    <td>1 uni</td>
+                </tr>
+                <tr>
+                        <td>Arroz</td>
+                        <td>R$ 5,20</td>
+                        <td>1 uni</td>
+                    </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>TOTAIS</td>
+                    <td>R$ 13,95</td>
+                    <td>2 uni</td>
+                </tr>
+            </tfoot>
+        </table>
+        <hr/><!-- separador-->
+        <table border="1">
+            <thead>
+                <tr>
+                    <th colspan="2">PRODUTO E VALOR</th> <!--para mesclar linhas-->
+                    <th>QUANTIDADE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Feijão</td>
+                    <td rowspan="2">R$ 0,00</td> <!--para mesclar colunas-->
+                    <td>1 uni</td>
+                </tr>
+                <tr>
+                    <td>Arroz</td>
+                    <td>1 uni</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>TOTAIS</td>
+                    <td>R$ 00,00</td>
+                    <td>2 uni</td>
+                </tr>
+            </tfoot>
+        </table>
+        <hr/><!-- separador-->
+        <h3>LISTA NUMERADA</h3>
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+        <hr/><!-- separador-->
+        <h3>LISTA SIMPLES</h3>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>s
+        </ul>
+        <hr/>
+        <h3>LISTA DE DEFINIÇÕES</h3>
+        <dl>
+            <dt>Título 1</dt>
+                <dd>Definição 1</dd>
+            <dt>Título 2</dt>
+                <dd>Definição 2</dd>
+            <dt>Título 3</dt>
+                <dd>Definição 3</dd>
+        </dl>
+        <hr/><!-- separador-->
+        <h3>FOMULÁRIOS</h3>
+            <form action="salvar_dados.php" method="post">
+                <input required name="form" type="text" placeholder="Digite login"> <br/>
+                <input required name="form" type="password" placeholder="Digite senha"> <br/>
+                <input name="form" type="number" placeholder="Escolha um número"> <br/>
+                <input name="form" type="color" placeholder="Digite aqui"> <br/>
+                <p>--</p>
+                <input type="checkbox">Checkbox1<br/>
+                <input type="checkbox">Checkbox1<br/>
+                <p>--</p>
+                <input type="radio">Radio button <br/>
+                <p>--</p>
+                <input type="range"> <br/>
+                <p>--</p>
+                <select name="" id="">
+                    <option value="1">Opção 1</option>
+                    <option value="2">Opção 2</option>
+                    <option value="3">Opção 3</option>
+                </select><br/>
+                <p>--</p>
+                <textarea name="message" rows="10" cols="30"></textarea><br/>
+                <input type="submit" value="Enviar"> <!--envia os dados de fato-->
+                <button>Click me</button> <!--apenas um btn (sem otype="submit")-->
+            </form>
+        <pre>
+
+
+
+
+
+
+
+        </pre>
     </body>
 </html>
