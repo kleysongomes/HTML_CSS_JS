@@ -131,7 +131,7 @@ aprenda conosco e se mantenha atualizado!
         <ul>
             <li>Item 1</li>
             <li>Item 2</li>
-            <li>Item 3</li>s
+            <li>Item 3</li>
         </ul>
         <hr/>
         <h3>LISTA DE DEFINIÇÕES</h3>
@@ -154,7 +154,9 @@ aprenda conosco e se mantenha atualizado!
                 <input type="checkbox">Checkbox1<br/>
                 <input type="checkbox">Checkbox1<br/>
                 <p>--</p>
-                <input type="radio">Radio button <br/>
+                <!--Por está com o mesmo name quando marcar um o outro perde o a marcação-->
+                <input name="nm1" type="radio">Radio button1 <br/>
+                <input name="nm1" type="radio">Radio button2 <br/>
                 <p>--</p>
                 <input type="range"> <br/>
                 <p>--</p>
@@ -168,14 +170,25 @@ aprenda conosco e se mantenha atualizado!
                 <input type="submit" value="Enviar"> <!--envia os dados de fato-->
                 <button>Click me</button> <!--apenas um btn (sem otype="submit")-->
             </form>
-        <pre>
-
-
-
-
-
-
-
-        </pre>
+        <aside >
+        <hr/><!-- separador-->
+        <audio controls src="lugar_do-arquivo.mp3">Seu navegador não suorta áudio</audio>
+        <br/> <!-- para quebrar a linha-->
+        <!-- video local-->
+        <video controls src="lugar_do-arquivo.mp4">Seu navegador não suorta áudio</video>
+        <br/> <!-- para quebrar a linha-->
+        <!--video youtube, pegando o incorporar-->
+        <iframe width="642" height="361" 
+        src="https://www.youtube.com/embed/3OkAN3YbR3w" 
+        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+        <hr/><!-- separador-->
+        </aside>
+        <nav>
+            <a href="assets/css/">CSS</a>
+            <a href="assets/js/">JavaScript</a>
+            <a href="assets/img/">IMG</a>
+        </nav>
+        <footer style="margin-top: 60px">2019 - Kleyson Gomes</footer>
     </body>
 </html>
