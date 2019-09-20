@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Prova#media</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-primary bg-light">
+        <a class="navbar-brand font-wei" href="index.html">Prova-Kleysongomes</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="filtroLista.html">Filtragem de lista</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="porcentagem.html">Calculadora de %</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="media.html">Média</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+
+
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Calculadora#de#Media</li>
+        </ol>
+      </nav>
+
+      <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Nota da Prova</span>
+            </div>
+            <input type="text" id="notaProva" aria-label="First name">
+      </div><br/>
+      <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Nota da Trabalho</span>
+            </div>
+            <input type="text" id="notaTrab" aria-label="First name">
+      </div><br/>
+      <button type="button" class="btn btn-primary" onclick="calcular_media()">Calcular Média</button>
+      <input type="text" id="input-result" aria-label="First name">
+
+      <script>
+          function calcular_media(){
+            var x = Number(document.getElementById("notaProva").value)
+            var y = Number(document.getElementById("notaTrab").value)
+            var result = (x+y)/2
+            document.getElementById("input-result").value = result
+          }
+      </script>
+    
+</body>
+</html>
